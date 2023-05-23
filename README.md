@@ -1,8 +1,8 @@
-# Pesa Popote
+# 🚀 Pesa Popote 🚀
 
 Welcome to Pesa Popote, the fintech solution that lets you send and receive money "popote," which means "everywhere" in Swahili. With Pesa Popote, you can make payments, manage transactions, and keep track of your finances in a way that's as smooth as a well-executed M-Pesa transaction.
 
-## Table of Contents
+## Table of Contents  📋
 
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
@@ -45,6 +45,6 @@ Pesa Popote is licensed under the [MIT License](https://opensource.org/licenses/
 
 ---
 
-Thank you for choosing Pesa Popote! We're excited to have you on board. Get ready to make payments like never before. Let's go popote!
+Get ready to make payments like never before. Let's go popote ✨💰✨
 
 Disclaimer: Pesa Popote is not responsible for any sudden urge to break into a dance routine when money arrives in your account. But hey, who can blame you? Money makes us all a little happier!
