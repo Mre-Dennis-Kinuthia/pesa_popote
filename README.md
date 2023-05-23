@@ -1,6 +1,8 @@
 # 🚀 Pesa Popote 🚀
 
-Welcome to Pesa Popote, the fintech solution that lets you send and receive money "popote," which means "everywhere" in Swahili. With Pesa Popote, you can make payments, manage transactions, and keep track of your finances in a way that's as smooth as a well-executed M-Pesa transaction.
+Welcome to Pesa Popote, the fintech solution that lets you send and receive money "popote," which means "everywhere" in Swahili. With Pesa Popote, you can make payments, manage transactions, and keep track of your finances in a way that's smooth and well-executed.
+
+Pesa Popote integrates multiple financial services, including M-Pesa, Flutterwave, Lipa Na M-Pesa, Lipa Later, and Kopo Kopo, to provide you with a comprehensive suite of features. From making payments to managing transactions and keeping track of your finances, we've got you covered!
 
 ## Table of Contents  📋
 
