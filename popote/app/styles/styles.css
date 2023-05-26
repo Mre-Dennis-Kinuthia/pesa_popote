@@ -1,0 +1,67 @@
+nav {
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: grey;
+  text-decoration: none;
+  decoration: none;
+}
+.nav-btn-group {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.btn-style {
+  height: 50px;
+  width: 120px;
+  background-color: lightblue;
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+.nav-cat-btn-group {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.btn-style-cat {
+  height: 50px;
+  width: 120px;
+  background-color: lightblue;
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+}
+.page-container {
+  overflow-y: auto;
+  height: calc(100vh - 75px);
+}
+.home-text-container{
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background-color: darkgray;
+    position: absolute;
+    top:15%;
+    left: 0;
+}
+.paragraph {
+  white-space: pre-line;
+}
+.link {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  line-height: 25px; /* Adjust the value as needed */
+}
