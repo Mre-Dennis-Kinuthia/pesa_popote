@@ -25,7 +25,7 @@ export default function Nav() {
 
       <div className="nav-cat-btn-group">
         <button className="btn-style-cat">
-          <Link href="/Login">
+          <Link href="/login">
             <span className="link">Login</span>
           </Link>
         </button>
