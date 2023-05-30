@@ -1,5 +1,6 @@
 import React from 'react';
 import './pages.css';
+import '@/app/styles/styles.css';
 import Layout from '@/app/LandingPageLayout';
 import { metadata } from '@/app/metadata';
 import { RiMoneyDollarCircleLine, RiSendPlaneLine, RiTimeLine } from 'react-icons/ri';

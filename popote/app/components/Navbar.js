@@ -30,7 +30,7 @@ export default function Nav() {
           </Link>
         </button>
         <button className="btn-style-cat">
-          <Link href="/Register">
+          <Link href="/signup">
             <span className="link">Register</span>
           </Link>
         </button>

@@ -1,0 +1,107 @@
+.signup{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 657px;
+    width: 45%;
+    border: 1px solid #000;
+}
+form{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    height: 55%;
+    width: 89%;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="phone"],
+select {
+  width: 80%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  color: #fff; /* Set the text color to white */
+  margin-left: 10px;
+  margin-top: 20px;
+}
+input[type="text"]{
+    width: 40%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    margin-left: 10px;
+}
+.btn-style-submit{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 1px;
+    background-color: #3B82F6;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.btn-style-submit:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.btn-style-return{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 1px;
+    background-color: red;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+}
+.btn-style-return:hover{
+    background-color: #fff;
+    color: black;
+    border: 1px solid #000;
+}
+.btn-group{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+input[type="checkbox"]{
+    margin-left: 10px;
+    color: #000;
+    margin-top: 20px;
+}
+.terms{
+    font-size: 16px;
+
+}
+.text{
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    left: 10%;
+    top:15%;
+    margin-left: 10px;
+}
+.link {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px; 
+}
