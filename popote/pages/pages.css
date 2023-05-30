@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  width: 99%;
+  background-color: #fff;
+  grid-template-columns: auto auto auto;
+  position: absolute;
+  top: 11.5%;
+  left: 1.5%;
+}
+.text-card{
+    position: absolute;
+    top: 2.5%;
+
+}

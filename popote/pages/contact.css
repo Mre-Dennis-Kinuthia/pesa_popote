@@ -1,0 +1,20 @@
+.contact{
+    height: 540px;
+    width: 35%;
+    background-color: #aaa;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    border-radius: 1px;
+    border: 1px solid #000;
+}
+input[type=text], select, textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    resize: vertical;
+}
+textarea{
+    height: 20px;
+}

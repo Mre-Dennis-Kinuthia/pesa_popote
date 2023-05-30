@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Nav() {
   return (
-    <nav>
+    <nav className="bg-blue-500">
       <div className="nav-btn-group">
         <button className="btn-style">
             <Link href="/">
