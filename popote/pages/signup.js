@@ -1,8 +1,71 @@
 import React from 'react';
+import { useState } from 'react';
 import './signup.css';
-import Link from 'next/link';
 
-const SignupPage = () => {
+export default function Signup(){
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleSubmit = async (e) =>{
+        e.preventDefault();
+
+        try {
+            const response = await fetch('/api/users',{
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({firstName, lastName, email, password }),
+            });
+            if (response.ok){
+                const data = await response.json();
+                console.log(data);// user created successfully
+            } else{
+                console.error('Error creating user');
+            }
+        } catch (error) {
+            console.error(error);
+        }
+    };
+
+    return(
+        <div>
+            <h1>Sign Up</h1>
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    placeholder="firstName"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                />
+                <input
+                    type="text"
+                    placeholder="lastName"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                />
+                <input
+                    type="email"
+                    placeholder="Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                />
+                <input
+                    type="password"
+                    placeholder="Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    );
+}
+
+
+/*const SignupPage = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Handle form submission logic here
@@ -51,4 +114,4 @@ const SignupPage = () => {
     );
 };
 
-export default SignupPage;
+export default SignupPage;*/
