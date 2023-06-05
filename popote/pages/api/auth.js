@@ -1,13 +1,12 @@
-// api/user.js
+import { createUser } from './users';
 
-import { PrismaClient } from '@prisma/client';
+export default async function signup(req, res) {
+  const { firstName, lastName, email, password } = req.body;
 
-const prisma = new PrismaClient();
-
-export async function findUserByEmail(email) {
-    const user = await prisma.user.findUnique({
-        where: { email },
-    });
-
-    return user;
+  try {
+    const newUser = await createUser(firstName, lastName, email, password);
+    res.status(201).json({ message: 'User created successfully' });
+  } catch (error) {
+    res.status(500).json({ error: 'An error occurred' });
+  }
 }

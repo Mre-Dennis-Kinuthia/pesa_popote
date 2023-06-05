@@ -27,7 +27,7 @@ select {
   height: 40px;
   border: 1px solid #ccc;
   border-radius: 1px;
-  color: #fff; /* Set the text color to white */
+  color: #000; /* Set the text color to white */
   margin-left: 10px;
   margin-top: 20px;
 }

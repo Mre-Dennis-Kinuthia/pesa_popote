@@ -3,14 +3,10 @@ import bcrypt from 'bcrypt';
 
 const prisma = new PrismaClient();
 
-export default async function signup(req, res) {
-    const { firstName, lastName, email, password } = req.body;
-
-    //Hash the password
+export async function createUser(firstName, lastName, email, password) {
     const hashedPassword = await bcrypt.hash(password, 10);
 
     try {
-        //create the new user
         const newUser = await prisma.user.create({
             data: {
                 firstName,
@@ -20,9 +16,8 @@ export default async function signup(req, res) {
             },
         });
 
-        res.status(201).json({ message: 'User created successfully' });
+        return newUser;
     } catch (error) {
-        res.status(500).json({ error: 'An error occurred' });
+        throw new Error('An error occurred while creating the user');
     }
 }
-// api/user.js
