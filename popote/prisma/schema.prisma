@@ -22,7 +22,6 @@ model User {
   transactions Transaction[]
 }
 
-// Define the Transaction model
 model Transaction {
   id         Int       @id @default(autoincrement())
   amount     Float
@@ -34,9 +33,8 @@ model Transaction {
   userId     Int
 }
 
-// Define the Payment model
 model Payment {
-  id          Int      @id @default(autoincrement())
+  phoneNumber String   @id  // phoneNumber as the primary key with default value
   name        String
   description String
   createdAt   DateTime @default(now())
