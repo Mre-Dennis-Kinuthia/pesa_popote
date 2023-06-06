@@ -1,38 +1,30 @@
-// mpesa.js
+import { Client } from '@paymentsds/mpesa';
 
-// Import necessary dependencies or SDKs for M-Pesa integration
+const client = new Client({
+  apiKey: '<REPLACE>',             // API Key
+  publicKey: '<REPLACE>',          // Public Key
+  serviceProviderCode: '<REPLACE>' // Service Provider Code
+});
 
-// Function to initiate a payment with M-Pesa
-async function initiatePayment(phoneNumber, amount) {
-  // Implement the necessary logic to initiate the payment with M-Pesa
-  // This may involve making API requests to the M-Pesa API, generating access tokens, constructing payment payloads, etc.
-  // You can refer to the M-Pesa API documentation for details on the specific implementation
-
-  // Example placeholder implementation
-  const paymentPayload = {
-    phoneNumber,
-    amount,
-    // Add other required payment details
+export const simulateMpesaExpressTransaction = (amount, phoneNumber) => {
+  const paymentData = {
+    to: phoneNumber,               // Customer MSISDN
+    reference: '11114',            // Third Party Reference
+    transaction: 'T12344CC',       // Transaction Reference
+    amount: amount                  // Amount
   };
 
-  // Make the API request to initiate the payment
-  const paymentResponse = await makePaymentAPIRequest(paymentPayload);
-
-  // Process the response and extract relevant information
-  const paymentStatus = paymentResponse.status;
-  const paymentID = paymentResponse.id;
-  // Add other relevant payment details
-
-  // Return the payment result
-  return {
-    status: paymentStatus,
-    id: paymentID,
-    // Add other relevant payment details
-  };
-}
-
-// Other helper functions or logic related to M-Pesa integration can be added here
-
-module.exports = {
-  initiatePayment,
+  return client.send(paymentData)
+    .then(response => {
+      // Handle success scenario
+      console.log('Payment successful', response);
+    })
+    .catch(error => {
+      // Handle failure scenario
+      console.error('Payment failed', error);
+    });
 };
+
+// Other M-Pesa API integration functions can be added here
+
+export default client;

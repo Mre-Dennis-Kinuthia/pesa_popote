@@ -22,7 +22,7 @@ export default function PaymentForm() {
     <form onSubmit={handleFormSubmit}>
       <label htmlFor="phoneNumber">Phone Number:</label>
       <input
-        type="text"
+        type="number"
         id="phoneNumber"
         value={phoneNumber}
         onChange={(e) => setPhoneNumber(e.target.value)}
